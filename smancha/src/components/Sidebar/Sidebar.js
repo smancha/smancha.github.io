@@ -19,10 +19,10 @@ function Sidebar() {
 					<NavLink className='nav-link' to='/research-interests'> Research Interests </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/'> Projects </NavLink>
+					<NavLink className='nav-link' to='/projects'> Projects </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/'> CV </NavLink>
+					<NavLink className='nav-link' to='/cv'> CV </NavLink>
 				</li>
 			</ul>
 		</div>

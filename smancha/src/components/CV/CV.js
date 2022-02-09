@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
 import Sidebar from '../Sidebar/Sidebar'
-import './Home.css'
+import './CV.css'
 
-class Home extends Component {
+class CV extends Component {
 
 	constructor() {
 		super()
@@ -19,7 +19,7 @@ class Home extends Component {
 						<Sidebar />
 					</div>
 					<div className='col-9'>
-						home
+						CV
 					</div>
 				</div>
 			</div>
@@ -27,4 +27,4 @@ class Home extends Component {
 	}
 }
 
-export default Home
+export default CV
