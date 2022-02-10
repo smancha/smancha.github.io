@@ -1,9 +1,13 @@
-.background {
-	min-height: 100vh;
-	background-color: #6D6D76;
-	padding: 0;
-}
-
 .row {
 	margin-right: 0;
+}
+
+.description { 
+	color: #CCCCCC;
+	position: absolute;
+	top: 30vh;
+}
+
+.contact-info {
+	margin-top: 20px;
 }

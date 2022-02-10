@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2F2F2F;
+  min-height: 100vh;
+  padding: 0;
 }
 
 code {
@@ -12,7 +15,19 @@ code {
     monospace;
 }
 
+.a-light {
+	color: #6D6D76;
+}
+
+.a-dark {
+  color: #CCCCCC;
+}
+
 a:hover {
   color: #BE9CDE;
   font-weight: bold;
+}
+
+.no-left-padding {
+  padding-left: 0;
 }
