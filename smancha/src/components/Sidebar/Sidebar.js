@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-import ProfilePhoto from '../../res/yayoi.jpg'
+import ProfilePhoto from '../../res/smancha.jpg'
 import './Sidebar.css';
 
 function Sidebar() {
@@ -8,21 +8,21 @@ function Sidebar() {
 		<div className='sidebar-background text-center'>
 			<div className=''>
 				<img src={ProfilePhoto} className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
-				<p className='display-4'> Sebastián Mancha </p>
+				<p className='heading-5 name'> Sebastián Mancha </p>
 			</div>
 			<hr className='divider' />
 			<ul className='nav flex-column'>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/'> Home </NavLink>
+					<NavLink className='nav-link a-light' to='/'> Home </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/research-interests'> Research Interests </NavLink>
+					<NavLink className='nav-link a-light' to='/research-interests'> Research Interests </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/projects'> Projects </NavLink>
+					<NavLink className='nav-link a-light' to='/projects'> Projects </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link' to='/cv'> CV </NavLink>
+					<NavLink className='nav-link a-light' to='/cv'> CV </NavLink>
 				</li>
 			</ul>
 		</div>

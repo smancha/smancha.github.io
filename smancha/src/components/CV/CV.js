@@ -15,10 +15,10 @@ class CV extends Component {
 		return (
 			<div className='background container-fluid'>
 				<div className='row'>
-					<div className='col-sm-4 col-lg-3'>
+					<div className='col-xs-6 col-sm-4 col-lg-3 p-0'>
 						<Sidebar />
 					</div>
-					<div className='col-9'>
+					<div className='col-xs-6 col-sm-8 col-lg-9'>
 						CV
 					</div>
 				</div>
