@@ -5,7 +5,7 @@ import './Sidebar.css';
 
 function Sidebar() {
 	return (
-		<div className='sidebar-background text-center'>
+		<div className='sidebar-background text-center light'>
 			<div className=''>
 				<img src={ProfilePhoto} className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
 				<p className='heading-5 name'> Sebastián Mancha </p>
@@ -13,16 +13,16 @@ function Sidebar() {
 			<hr className='divider' />
 			<ul className='nav flex-column'>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link a-light' to='/'> Home </NavLink>
+					<NavLink className='nav-link light' to='/'> Home </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link a-light' to='/research-interests'> Research Interests </NavLink>
+					<NavLink className='nav-link light' to='/research-interests'> Research Interests </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link a-light' to='/projects'> Projects </NavLink>
+					<NavLink className='nav-link light' to='/projects'> Projects </NavLink>
 				</li>
 				<li className='nav-item lead'>
-					<NavLink className='nav-link a-light' to='/cv'> CV </NavLink>
+					<NavLink className='nav-link light' to='/cv'> CV </NavLink>
 				</li>
 			</ul>
 		</div>

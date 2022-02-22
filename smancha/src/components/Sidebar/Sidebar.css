@@ -1,7 +1,6 @@
 .sidebar-background {
 	background-color: #FBF8F1;
 	min-height: 100vh;
-	color: #6D6D76;
 	padding-top: 5vh;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -12,10 +11,6 @@
 	width: 200px;
 	margin-bottom: 30px;
 	object-fit: cover;
-}
-
-a {
-	color: #6D6D76;
 }
 
 .divider {
