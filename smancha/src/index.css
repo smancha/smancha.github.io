@@ -15,13 +15,21 @@ code {
     monospace;
 }
 
+.dark { 
+  color: #CCCCCC;
+}
+
+.light {
+  color: #6D6D76;
+}
+/* 
 .a-light {
 	color: #6D6D76;
 }
 
 .a-dark {
   color: #CCCCCC;
-}
+} */
 
 a:hover {
   color: #BE9CDE;
