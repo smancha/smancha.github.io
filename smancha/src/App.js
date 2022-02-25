@@ -13,16 +13,16 @@ function App() {
 		<Router>
 			<div className='App'>
 				{/* website coming soon */}
-				<Routes>
+				{/* <Routes>
 					<Route 
 						exact path='/'
 						element={<ComingSoon />}
 					/>
-				</Routes>
+				</Routes> */}
 
 
 				{/* final routing of website */}
-				{/* <Routes>
+				<Routes>
 					<Route
 						exact path='/'
 						element={<Home />}
@@ -39,7 +39,7 @@ function App() {
 						exact path='cv'
 						element={<CV />}
 					/>
-				</Routes> */}
+				</Routes>
 			</div>
 		</Router>
 	);
