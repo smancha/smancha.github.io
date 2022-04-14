@@ -1,0 +1,12 @@
+.row {
+	margin-right: 0;
+}
+
+.description { 
+	position: absolute;
+	top: 20vh;
+}
+
+.contact-info {
+	margin-top: 20px;
+}
