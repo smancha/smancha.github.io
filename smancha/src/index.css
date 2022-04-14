@@ -36,6 +36,11 @@ a:hover {
   font-weight: bold;
 }
 
+.nav-link:hover {
+  color: #BE9CDE;
+  transition: none;
+}
+
 .no-left-padding {
   padding-left: 0;
 }

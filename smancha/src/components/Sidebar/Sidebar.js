@@ -5,7 +5,7 @@ import './Sidebar.css';
 
 function Sidebar() {
 	return (
-		<div className='sidebar-background text-center light'>
+		<div className='sticky-top sidebar-background text-center light'>
 			<div className=''>
 				<img src={ProfilePhoto} className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
 				<p className='heading-5 name'> Sebastián Mancha </p>
