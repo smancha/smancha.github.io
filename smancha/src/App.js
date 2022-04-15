@@ -4,16 +4,55 @@ import Home from './components/Home/Home'
 import ResearchInterests from './components/ResearchInterests/ResearchInterests';
 import Projects from './components/Projects/Projects';
 import CV from './components/CV/CV';
-import Sidebar from './components/Sidebar/Sidebar';
 import './App.css';
 import ComingSoon from './components/ComingSoon';
+import Sidebar from './components/Sidebar/Sidebar';
+
+const pages = [
+	{
+		path: "/",
+		exact: true,
+		element: () => <Home />
+	},
+	{
+		path: "/research-interests",
+		element: () => <ResearchInterests />
+	},
+	{
+		path: "/projects",
+		element: () => <Projects />
+	},
+	{
+		path: "/cv",
+		element: () => <CV />
+	}
+]
 
 function App() {
 	return (
 		<Router>
-			<div className='App'>
-				{/* website coming soon */}
-				{/* <Routes>
+			<div className='container-fluid'>
+				<div className='row'>
+					<div className='col-xs-6 col-sm-4 col-lg-3 p-0'>
+						<Sidebar />
+					</div>
+					<div className='col-xs-6 col-sm-8 col-lg-9'>
+						<Routes>
+							{pages.map((page, index) => (
+								<Route
+									key={index}
+									path={page.path}
+									exact={page.exact}
+									element={<page.element />}
+								/>
+							))}
+						</Routes>
+					</div>
+				</div>
+			</div>
+
+			{/* website coming soon */}
+			{/* <Routes>
 					<Route 
 						exact path='/'
 						element={<ComingSoon />}
@@ -21,8 +60,8 @@ function App() {
 				</Routes> */}
 
 
-				{/* final routing of website */}
-				<Routes>
+			{/* final routing of website */}
+			{/* <Routes>
 					<Route
 						exact path='/'
 						element={<Home />}
@@ -39,8 +78,7 @@ function App() {
 						exact path='cv'
 						element={<CV />}
 					/>
-				</Routes>
-			</div>
+				</Routes> */}
 		</Router>
 	);
 }
