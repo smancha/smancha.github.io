@@ -14,15 +14,8 @@ class CV extends Component {
 
 	render() {
 		return (
-			<div className='background container-fluid'>
-				<div className='row'>
-					<div className='col-xs-6 col-sm-4 col-lg-3 p-0'>
-						<Sidebar />
-					</div>
-					<div className='col-xs-6 col-sm-8 col-lg-9 pr-0'>
-						<object width="100%" height="100%" data={cv} type="application/pdf" />
-					</div>
-				</div>
+			<div className='main'>
+				<object width="100%" height="800" data={cv} type="application/pdf" />
 			</div>
 		)
 	}
