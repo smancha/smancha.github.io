@@ -23,9 +23,9 @@ class Home extends Component {
 						<p>My heart also belongs in West Texas, and as a proud Tejano from Odessa, Texas, I have a strong attachment to the dialectological work on Spanish in the Southwestern US. In fact, my journey into Linguistics started with a documentary/comparative study of the Spanish spoken in my home community. Check it out under <NavLink className='dark text-decoration-none' to='/projects'> Projects</NavLink>!</p>
 						<div className='contact-info text-left'>
 							<div>
-								<a className='dark text-decoration-none' target='_blank' href='mailto:smancha1231@utexas.edu'><i className="fa fa-envelope icon"></i></a>
+								<i className="fa fa-envelope icon"></i>
 								<b>Email: </b>
-								<a className='dark text-decoration-none' target='_blank' href='mailto:smancha1231@utexas.edu'>smancha1231@utexas.edu</a>
+								mancha[at]umd.edu
 							</div>
 							<div>
 								<a className='dark text-decoration-none' target='_blank' href='https://www.linkedin.com/in/sebastian-a-mancha-275229212'><i className="fa fa-linkedin icon"></i></a>
