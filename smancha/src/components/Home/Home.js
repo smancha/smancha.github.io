@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-import Sidebar from '../Sidebar/Sidebar'
 import './Home.css'
 
 class Home extends Component {
@@ -16,7 +15,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className='main description text-justify dark'>
-				<div className='row justify-content-center'>
+				<div className='row justify-content-center content'>
 					<div className='col-lg-6'>
 						<p>Hi, I’m Sebastián Mancha (/seβasˈtjan ˈmant͡ʃa/ or /səbˈæst͡ʃɪn ˈmɑnt͡ʃə/, whichever is easiest) a current undergraduate student in <a className='dark text-decoration-none' href='https://liberalarts.utexas.edu/linguistics/' target='_blank'>Linguistics</a> and <a className='dark text-decoration-none' href='https://liberalarts.utexas.edu/spanish/' target='_blank'>Spanish/Portuguese</a> at the University of Texas Austin, and hopefully Linguistics PhD student in Fall 2022. I’m also a trainee in <a className='dark text-decoration-none' href='https://liberalarts.utexas.edu/linguistics/faculty/fl5869' target='_blank'>Dr. Fernando Llanos Lucas</a>’ Neurolinguistics lab.</p>
 						<p>I’m a big fan of natural language syntax, particularly the myriad ways we can study it, my favorites being formal Generative frameworks, the Cognitive Neuroscience of Language, and computational approaches, and the intersection of all three!</p>
