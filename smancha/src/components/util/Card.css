@@ -2,3 +2,8 @@
 	background-color: transparent;
 	border: none;
 }
+
+.card-body {
+	padding-left: 0px;
+	padding-right: 0px;
+}

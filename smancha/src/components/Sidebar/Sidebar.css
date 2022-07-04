@@ -6,6 +6,10 @@
 	padding-right: 20px;
 }
 
+.sidebar-items {
+	padding-bottom: 25vh;
+}
+
 .profile-photo {
 	height: 200px;
 	width: 200px;
@@ -23,4 +27,35 @@
 	font-size: 3rem;
 	font-weight: 100;
 	line-height: 1.2;
+}
+
+.navbar-item {
+	font-size: medium;
+}
+
+.nav-link {
+	padding-left: 12px;
+	padding-right: 6px;
+}
+
+.navbar {
+	background-color: #FBF8F1;
+	width: 100vw
+}
+
+@media (max-width: 576px) {
+	.sidebar {
+		display: none;
+	}
+
+	.name {
+		font-size: 2rem;
+		padding-left: 12px;
+	}
+}
+
+@media (min-width: 577px) {
+	.navbar {
+		display: none;
+	}
 }

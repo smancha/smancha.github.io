@@ -1,3 +1,29 @@
 .row {
 	margin-right: 0;
 }
+
+.mobile-pdf {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+@media (max-width: 992px) {
+	.pc-pdf {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.mobile-pdf {
+		position: unset;
+		margin-top: 0px;
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 993px) {
+	.mobile-pdf {
+		display: none;
+	}
+}

@@ -14,7 +14,7 @@ class ResearchInterests extends Component {
 	render() {
 		return (
 			<div className='main'>
-				<div className='research-interests row justify-content-center'>
+				<div className='research-interests row justify-content-center content'>
 					<div className='col-lg-6'>
 						<Card
 							title='Syntax'

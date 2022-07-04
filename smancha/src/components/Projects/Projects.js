@@ -14,7 +14,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<div className='main'>
-				<div className='projects row justify-content-center'>
+				<div className='projects row justify-content-center content'>
 					<div className='col-lg-6'>
 						<Card
 							title='A Portrait of the Spanish of Ector County'

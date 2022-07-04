@@ -5,3 +5,11 @@
 .research-interests {
 	margin-top: 50px;
 }
+
+@media (max-width: 576px) {
+	.research-interests {
+		position: unset;
+		margin-top: 0px;
+		padding-top: 20px;
+	}
+}

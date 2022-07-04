@@ -5,3 +5,11 @@
 .projects {
 	margin-top: 30vh;
 }
+
+@media (max-width: 576px) {
+	.projects {
+		position: unset;
+		margin-top: 0px;
+		padding-top: 20px;
+	}
+}

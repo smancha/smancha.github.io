@@ -52,3 +52,16 @@ a:hover {
 .main {
 	max-height: 100vh;
 }
+
+.content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+	.nav-link:focus {
+		color: #BE9CDE;
+		font-weight: bold;
+		transition: none;
+	}
+}
