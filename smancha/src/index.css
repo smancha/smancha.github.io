@@ -32,7 +32,7 @@ code {
 
 a:hover {
 	color: #BE9CDE;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 .nav-link:hover {
