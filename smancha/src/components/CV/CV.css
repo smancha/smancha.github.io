@@ -13,10 +13,18 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.mobile-pdf {
+		position: unset;
+		margin-top: 70px;
+		padding-top: 20px;
+	}
+}
+
 @media (max-width: 576px) {
 	.mobile-pdf {
 		position: unset;
-		margin-top: 0px;
+		margin-top: 110px;
 		padding-top: 20px;
 	}
 }

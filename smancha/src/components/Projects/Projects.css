@@ -6,10 +6,18 @@
 	margin-top: 30vh;
 }
 
+@media (max-width: 768px) {
+	.projects {
+		position: unset;
+		margin-top: 70px;
+		padding-top: 20px;
+	}
+}
+
 @media (max-width: 576px) {
 	.projects {
 		position: unset;
-		margin-top: 0px;
+		margin-top: 110px;
 		padding-top: 20px;
 	}
 }

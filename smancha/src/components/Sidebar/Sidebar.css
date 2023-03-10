@@ -1,9 +1,9 @@
 .sidebar-background {
 	background-color: #FBF8F1;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding-top: 5vh;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .sidebar-items {
@@ -43,9 +43,31 @@
 	width: 100vw
 }
 
-@media (max-width: 576px) {
+.sticky-navbar {
+	position: fixed;
+	top: 0;
+	height: 70px;
+}
+
+.sticky-sidebar {
+	position: fixed;
+	top: 0;
+	width: 33.333333333%;
+}
+
+@media (min-width: 992px) {
+	.sticky-sidebar {
+		width: 25%;
+	}
+}
+
+@media (max-width: 767px) {
 	.sidebar {
 		display: none;
+	}
+
+	.sticky-sidebar {
+		width: 0;
 	}
 
 	.name {
@@ -54,7 +76,13 @@
 	}
 }
 
-@media (min-width: 577px) {
+@media (max-width: 576px) {
+	.sticky-navbar {
+		height: 110px;
+	}
+}
+
+@media (min-width: 768px) {
 	.navbar {
 		display: none;
 	}

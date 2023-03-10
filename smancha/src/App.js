@@ -31,22 +31,24 @@ const pages = [
 function App() {
 	return (
 		<Router>
-			<div className='container-fluid'>
-				<div className='row'>
-					<div className='col-xs-6 col-sm-4 col-lg-3 p-0'>
-						<Sidebar />
-					</div>
-					<div className='col-xs-6 col-sm-8 col-lg-9'>
-						<Routes>
-							{pages.map((page, index) => (
-								<Route
-									key={index}
-									path={page.path}
-									exact={page.exact}
-									element={<page.element />}
-								/>
-							))}
-						</Routes>
+			<div className='main'>
+				<div className='container-fluid'>
+					<div className='row'>
+						<div className='col-xs-6 col-md-4 col-lg-3 p-0'>
+							<Sidebar />
+						</div>
+						<div className='col-xs-6 col-md-8 col-lg-9'>
+							<Routes>
+								{pages.map((page, index) => (
+									<Route
+										key={index}
+										path={page.path}
+										exact={page.exact}
+										element={<page.element />}
+									/>
+								))}
+							</Routes>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -30,6 +30,12 @@ code {
   color: #CCCCCC;
 } */
 
+a {
+	text-decoration-color: #be9cde86;
+	text-decoration-thickness: 0.125em;
+	text-underline-offset: 4px;
+}
+
 a:hover {
 	color: #BE9CDE;
 	/* font-weight: bold; */
@@ -58,7 +64,7 @@ a:hover {
 	padding-bottom: 20px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 	.nav-link:focus {
 		color: #BE9CDE;
 		font-weight: bold;

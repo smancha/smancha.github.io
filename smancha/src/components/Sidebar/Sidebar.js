@@ -6,7 +6,7 @@ import './Sidebar.css';
 function Sidebar() {
 	return (
 		<div>
-			<div className='sticky-top navbar'>
+			<div className='navbar sticky-navbar'>
 				<p className='heading-6 name light'> Sebastián Mancha </p>
 				<nav>
 					<ul className='nav'>
@@ -25,7 +25,7 @@ function Sidebar() {
 					</ul>
 				</nav>
 			</div>
-			<div className='sticky-top sidebar'>
+			<div className='sidebar sticky-sidebar'>
 				<div className='sidebar-background text-center light'>
 					<img src={ProfilePhoto} className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
 					<p className='heading-5 name'> Sebastián Mancha </p>
