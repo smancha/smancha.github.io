@@ -1,10 +1,34 @@
+import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import { ref, getDownloadURL } from "firebase/storage";
 
-import ProfilePhoto from '../../res/smancha.jpg'
+import { storage } from '../util/Firebase';
 import './Sidebar.css';
 
-function Sidebar() {
-	return (
+class Sidebar extends Component {
+
+	constructor() {
+		super()
+
+		this.state = {}
+
+		this.getProfilePic = this.getProfilePic.bind(this)
+	}
+
+	componentDidMount() {
+		this.getProfilePic()
+	}
+
+	async getProfilePic() {
+		getDownloadURL(ref(storage, 'smancha.jpg'))
+			.then((url) => {
+				const img = document.getElementById('profile-pic');
+				img.setAttribute('src', url);
+			})
+	}
+
+	render() {
+		return(
 		<div>
 			<div className='navbar sticky-navbar'>
 				<p className='heading-6 name light'> Sebastián Mancha </p>
@@ -27,7 +51,7 @@ function Sidebar() {
 			</div>
 			<div className='sidebar sticky-sidebar'>
 				<div className='sidebar-background text-center light'>
-					<img src={ProfilePhoto} className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
+					<img id='profile-pic' className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
 					<p className='heading-5 name'> Sebastián Mancha </p>
 					<hr className='divider' />
 					<nav className='sidebar-items'>
@@ -50,6 +74,7 @@ function Sidebar() {
 			</div>
 		</div>
 	);
+}
 }
 
 export default Sidebar

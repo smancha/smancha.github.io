@@ -51,7 +51,7 @@ class Home extends Component {
 							<div>
 								<i className="fa fa-envelope icon"></i>
 								<b>Email: </b>
-								{this.state.email}
+								<span className="dark">{this.state.email}</span>
 							</div>
 							<div>
 								<a className='dark text-decoration-none' target='_blank' href={this.state.linkedin}><i className="fa fa-linkedin icon"></i></a>
@@ -63,7 +63,10 @@ class Home extends Component {
 								<b>Twitter: </b>
 								<a className='dark' target='_blank' href={this.state.twitter}>{this.state.twitter}</a>
 							</div>
-							<div><i className="fa fa-map-pin icon"></i><b>Location:</b> {this.state.location} </div>
+							<div>
+								<i className="fa fa-map-pin icon"></i>
+								<b>Location: </b> 
+								<span className='dark'>{this.state.location} </span></div>
 						</div>
 					</div>
 				</div>
