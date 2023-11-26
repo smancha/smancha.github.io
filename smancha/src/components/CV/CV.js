@@ -9,7 +9,7 @@ class CV extends Component {
 	constructor() {
 		super()
 
-		this.state = {cvUrl: ""}
+		this.state = { cvUrl: "" }
 
 		this.getCV = this.getCV.bind(this)
 	}

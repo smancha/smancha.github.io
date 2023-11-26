@@ -13,7 +13,7 @@ class ResearchInterests extends Component {
 		this.state = {
 			researchInterests: []
 		}
-		
+
 		this.fetchResearchInterests = this.fetchResearchInterests.bind(this)
 	}
 
@@ -43,8 +43,8 @@ class ResearchInterests extends Component {
 
 		return (
 			<div className='main'>
-				<div className='research-interests row justify-content-center content'>
-					<div className='col-lg-6'>
+				<div className='research-interests row justify-content-center '>
+					<div className='content d-flex flex-column justify-content-center col-lg-6'>
 						{researchInterestCards}
 					</div>
 				</div>

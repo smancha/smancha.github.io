@@ -1,6 +1,6 @@
 .sidebar-background {
 	background-color: #FBF8F1;
-	/* min-height: 100vh; */
+	min-height: 100vh;
 	padding-top: 5vh;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -88,7 +88,7 @@
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 612px) {
 	.sticky-navbar {
 		height: 110px;
 	}

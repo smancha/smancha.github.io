@@ -3,10 +3,10 @@
 }
 
 .research-interests {
-	margin-top: 50px;
+	height: 100vh;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.research-interests {
 		position: unset;
 		margin-top: 70px;
@@ -20,4 +20,4 @@
 		margin-top: 110px;
 		padding-top: 20px;
 	}
-}
+} */

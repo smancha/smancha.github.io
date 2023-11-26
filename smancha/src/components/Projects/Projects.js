@@ -42,8 +42,8 @@ class Projects extends Component {
 
 		return (
 			<div className='main'>
-				<div className='projects row justify-content-center content'>
-					<div className='col-lg-6'>
+				<div className='research-interests row justify-content-center '>
+					<div className='content d-flex flex-column justify-content-center col-lg-6'>
 						{projectCards}
 					</div>
 				</div>
