@@ -1,101 +1,109 @@
 .sidebar-background {
-	background-color: #FBF8F1;
-	min-height: 100vh;
-	padding-top: 5vh;
-	padding-left: 10px;
-	padding-right: 10px;
+  background-color: #fbf8f1;
+  min-height: 100vh;
+  padding-top: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .sidebar-items {
-	padding-bottom: 25vh;
+  padding-bottom: 25vh;
 }
 
 .profile-photo {
-	height: 200px;
-	width: 200px;
-	margin-bottom: 30px;
-	object-fit: cover;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 30px;
+  object-fit: cover;
 }
 
 .divider {
-	border: 0;
-	height: 1px;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .name {
-	font-size: 3rem;
-	font-weight: 100;
-	line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
 }
 
 .navbar-item {
-	font-size: medium;
+  font-size: medium;
 }
 
 .nav-link {
-	padding-left: 12px;
-	padding-right: 6px;
+  padding-left: 12px;
+  padding-right: 6px;
 }
 
 .navbar {
-	background-color: #FBF8F1;
-	width: 100vw
+  background-color: #fbf8f1;
+  width: 100vw;
+  z-index: 100;
 }
 
 .sticky-navbar {
-	position: fixed;
-	top: 0;
-	height: 70px;
+  position: fixed;
+  top: 0;
+  height: 70px;
 }
 
 .sticky-sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	overflow-y: scroll;
-	width: 33.333333333%;
-	-ms-overflow-style: none;
-	/* IE and Edge */
-	scrollbar-width: none;
-	/* Firefox */
-
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  width: 33.333333333%;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .sticky-sidebar::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 @media (min-width: 992px) {
-	.sticky-sidebar {
-		width: 25%;
-	}
+  .sticky-sidebar {
+    width: 25%;
+  }
 }
 
 @media (max-width: 767px) {
-	.sidebar {
-		display: none;
-	}
+  body {
+    margin-top: 100px;
+  }
+  .sidebar {
+    display: none;
+  }
 
-	.sticky-sidebar {
-		width: 0;
-	}
+  .sticky-sidebar {
+    width: 0;
+  }
 
-	.name {
-		font-size: 2rem;
-		padding-left: 12px;
-	}
+  .name {
+    font-size: 2rem;
+    padding-left: 12px;
+  }
 }
 
 @media (max-width: 612px) {
-	.sticky-navbar {
-		height: 110px;
-	}
+  .sticky-navbar {
+    height: 110px;
+  }
 }
 
 @media (min-width: 768px) {
-	.navbar {
-		display: none;
-	}
+  .navbar {
+    display: none;
+  }
 }

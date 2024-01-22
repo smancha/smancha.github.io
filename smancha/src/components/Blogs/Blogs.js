@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 
+import { Link } from 'react-router-dom';
 import { collection, getDocs } from 'firebase/firestore';
+
 import Card from '../util/Card/Card'
 import { db } from '../util/Firebase';
 import './Blogs.css'
-import { Link } from 'react-router-dom';
 
 class Blogs extends Component {
 
@@ -39,7 +40,7 @@ class Blogs extends Component {
 
 	render() {
 		return (
-			<div className='main'>
+			<div className='main content'>
 				{this.state.blogs.map((blog) => {
 					return (
 						<div>

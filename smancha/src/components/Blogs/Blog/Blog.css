@@ -1,0 +1,28 @@
+.blog {
+  margin: 20px;
+}
+
+.back-icon {
+  color: #ffffff;
+}
+
+.comment-section {
+  margin-top: 3%;
+}
+
+.form-comment {
+  height: 100px;
+}
+
+.form-name {
+  margin-top: 10px;
+}
+
+.form-submit {
+  padding-right: unset;
+}
+
+.comments {
+  margin-top: 40px;
+  padding-bottom: 50px;
+}

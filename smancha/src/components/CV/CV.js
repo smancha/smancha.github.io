@@ -19,7 +19,7 @@ class CV extends Component {
 	}
 
 	async getCV() {
-		getDownloadURL(ref(storage, 'smancha_CV.pdf'))
+		getDownloadURL(ref(storage, 'smancha_cv.pdf'))
 			.then((url) => {
 				const cv = document.getElementById('cv');
 				cv.setAttribute('src', url);
