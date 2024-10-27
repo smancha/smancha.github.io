@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
 
 import { db } from '../util/Firebase';
-import Card from '../util//Card/Card'
+import Card from '../util/Card/Card'
 import './ResearchInterests.css'
 
 class ResearchInterests extends Component {
