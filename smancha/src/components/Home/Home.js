@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import { collection, doc, addDoc, getDoc } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 
 import { db } from '../util/Firebase';
 import './Home.css'
