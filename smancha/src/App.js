@@ -30,11 +30,11 @@ const pages = [
 	},
 	{
 		path: "/blogs",
-		element: () => <Blogs />
+		element: () => <ComingSoon />
 	},
 	{
 		path: "/blog/:id",
-		element: () => <Blog />
+		element: () => <ComingSoon />
 	}
 ]
 
