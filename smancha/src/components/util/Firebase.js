@@ -11,7 +11,7 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBLQ8g_ItwKiNd3ByLkvZVX3_XZdfImhvM",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "smancha-db.firebaseapp.com",
     databaseURL: "https://smancha-db-default-rtdb.firebaseio.com",
     projectId: "smancha-db",
