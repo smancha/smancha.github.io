@@ -1,6 +1,0 @@
-{
-  "rules": {
-    "no-unused-vars": "warn",
-    "react/jsx-no-target-blank": "warn"
-  }
-}

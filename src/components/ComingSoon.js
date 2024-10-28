@@ -57,14 +57,14 @@ class ComingSoon extends Component {
 								<span className="dark">{this.state.email}</span>
 							</div>
 							<div>
-								<a className='dark text-decoration-none' target='_blank' href={this.state.linkedin}><i className="fa fa-linkedin icon"></i></a>
+								<a className='dark text-decoration-none' target='_blank' rel="noreferrer noopener" href={this.state.linkedin}><i className="fa fa-linkedin icon"></i></a>
 								<b>LinkedIn: </b>
-								<a className='dark' target='_blank' href={this.state.linkedin}>{this.state.linkedin}</a>
+								<a className='dark' target='_blank' rel="noreferrer noopener" href={this.state.linkedin}>{this.state.linkedin}</a>
 							</div>
 							<div>
-								<a className='dark text-decoration-none' target='_blank' href={this.state.twitter}><i className="fa fa-twitter icon"></i></a>
+								<a className='dark text-decoration-none' target='_blank' rel="noreferrer noopener" href={this.state.twitter}><i className="fa fa-twitter icon"></i></a>
 								<b>Twitter: </b>
-								<a className='dark' target='_blank' href={this.state.twitter}>{this.state.twitter}</a>
+								<a className='dark' target='_blank' rel="noreferrer noopener" href={this.state.twitter}>{this.state.twitter}</a>
 							</div>
 							<div>
 								<i className="fa fa-map-pin icon"></i>

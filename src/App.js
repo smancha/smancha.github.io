@@ -1,11 +1,11 @@
-import { Route, Routes, BrowserRouter as Router, useParams } from 'react-router-dom';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 
 import Home from './components/Home/Home'
 import ResearchInterests from './components/ResearchInterests/ResearchInterests';
 import Projects from './components/Projects/Projects';
 import CV from './components/CV/CV';
-import Blogs from './components/Blogs/Blogs';
-import Blog from './components/Blogs/Blog/Blog';
+// import Blogs from './components/Blogs/Blogs';
+// import Blog from './components/Blogs/Blog/Blog';
 import './App.css';
 import ComingSoon from './components/ComingSoon';
 import Sidebar from './components/Sidebar/Sidebar';
