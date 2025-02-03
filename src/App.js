@@ -6,7 +6,7 @@ import Home from './components/Home/Home'
 import ResearchInterests from './components/ResearchInterests/ResearchInterests';
 import Projects from './components/Projects/Projects';
 import CV from './components/CV/CV';
-import Collaborators from './components/Collaborators/Collaborators';
+// import Collaborators from './components/Collaborators/Collaborators';
 // import Blogs from './components/Blogs/Blogs';
 // import Blog from './components/Blogs/Blog/Blog';
 import './App.css';

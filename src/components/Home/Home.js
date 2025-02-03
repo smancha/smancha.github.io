@@ -6,10 +6,6 @@ import './Home.css'
 
 class Home extends Component {
 
-	constructor() {
-		super()
-	}
-
 	render() {
 		return (
 			<div className='main text-justify dark'>

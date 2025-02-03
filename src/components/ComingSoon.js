@@ -5,10 +5,6 @@ import './ComingSoon.css'
 
 class ComingSoon extends Component {
 
-	constructor() {
-		super()
-	}
-
 	render() {
 		return (
 			<div className='background container-fluid'>
