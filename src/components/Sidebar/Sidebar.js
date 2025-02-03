@@ -47,6 +47,9 @@ class Sidebar extends Component {
 								<NavLink className='nav-link light' to='/cv'> CV </NavLink>
 							</li>
 							<li className='nav-item lead navbar-item'>
+								<NavLink className='nav-link light' to='/collaborators'> Collaborators </NavLink>
+							</li>
+							<li className='nav-item lead navbar-item'>
 								<NavLink className='nav-link light' to='/blogs'> Blogs </NavLink>
 							</li>
 						</ul>
@@ -70,6 +73,9 @@ class Sidebar extends Component {
 								</li>
 								<li className='nav-item lead'>
 									<NavLink className='nav-link light' to='/cv'> CV </NavLink>
+								</li>
+								<li className='nav-item lead'>
+									<NavLink className='nav-link light' to='/collaborators'> Collaborators </NavLink>
 								</li>
 								<li className='nav-item lead'>
 									<NavLink className='nav-link light' to='/blogs'> Blogs </NavLink>

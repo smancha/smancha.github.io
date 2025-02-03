@@ -1,24 +1,24 @@
 .row {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .description {
-	height: 100vh;
+  height: 100vh;
 }
 
 .contact-info {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .icon {
-	margin-right: 10px;
-	width: 15px;
+  margin-right: 10px;
+  width: 15px;
 }
 
 @media (max-width: 768px) {
-	.description {
-		position: unset;
-		padding-top: 20px;
-		padding-inline: 20px;
-	}
+  .description {
+    position: unset;
+    padding-top: 20px;
+    padding-inline: 20px;
+  }
 }

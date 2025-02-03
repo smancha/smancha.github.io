@@ -1,14 +1,15 @@
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 
+import ComingSoon from './components/ComingSoon';
+import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home'
 import ResearchInterests from './components/ResearchInterests/ResearchInterests';
 import Projects from './components/Projects/Projects';
 import CV from './components/CV/CV';
+import Collaborators from './components/Collaborators/Collaborators';
 // import Blogs from './components/Blogs/Blogs';
 // import Blog from './components/Blogs/Blog/Blog';
 import './App.css';
-import ComingSoon from './components/ComingSoon';
-import Sidebar from './components/Sidebar/Sidebar';
 
 const pages = [
 	{
@@ -27,6 +28,10 @@ const pages = [
 	{
 		path: "/cv",
 		element: () => <CV />
+	},
+	{
+		path: "/collaborators",
+		element: () => <ComingSoon />
 	},
 	{
 		path: "/blogs",

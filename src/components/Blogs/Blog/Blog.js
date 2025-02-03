@@ -70,7 +70,6 @@ class Blog extends Component {
 
 	handleOnTextChange(e) {
 		const { name, value } = e.target
-		console.log(name, value)
 		this.setState({ [name]: value }, () => {
 			if (this.checkCanSubmit()) {
 				this.setState({ isSubmitDisabled: false });
