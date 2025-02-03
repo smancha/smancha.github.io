@@ -53,7 +53,7 @@ class Contacts extends Component {
                 <div>
                     <i className="fa-brands fa-bluesky icon"></i>
                     <b>Bluesky: </b>
-                    <a className='dark' target='_blank' rel="noreferrer noopener">{this.state.bluesky}</a>
+                    <span className="dark">{this.state.bluesky}</span>
                 </div>
                 <div>
                     <i className="fa-solid fa-location-dot icon"></i>
