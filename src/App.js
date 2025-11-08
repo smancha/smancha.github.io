@@ -11,8 +11,6 @@ import CV from './components/CV/CV';
 // import Blog from './components/Blogs/Blog/Blog';
 import './App.css';
 
-// test
-
 const pages = [
 	{
 		path: "/",
