@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes, HashRouter as Router } from 'react-router-dom';
 
 import ComingSoon from './components/ComingSoon';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -39,6 +39,10 @@ const pages = [
 	},
 	{
 		path: "/blog/:id",
+		element: () => <ComingSoon />
+	},
+	{
+		path: "/teaching",
 		element: () => <ComingSoon />
 	}
 ]

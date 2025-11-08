@@ -52,6 +52,9 @@ class Sidebar extends Component {
 							<li className='nav-item lead navbar-item'>
 								<NavLink className='nav-link light' to='/blogs'> Blogs </NavLink>
 							</li>
+							<li className='nav-item lead navbar-item'>
+								<NavLink className='nav-link light' to='/teaching'> Teaching </NavLink>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -79,6 +82,9 @@ class Sidebar extends Component {
 								</li>
 								<li className='nav-item lead'>
 									<NavLink className='nav-link light' to='/blogs'> Blogs </NavLink>
+								</li>
+								<li className='nav-item lead'>
+									<NavLink className='nav-link light' to='/teaching'> Teaching </NavLink>
 								</li>
 							</ul>
 						</nav>

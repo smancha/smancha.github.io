@@ -1,0 +1,23 @@
+.row {
+  margin-right: 0;
+}
+
+.teaching {
+  height: 100vh;
+}
+
+/* @media (max-width: 768px) {
+	.teaching {
+		position: unset;
+		margin-top: 70px;
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 576px) {
+	.teaching {
+		position: unset;
+		margin-top: 110px;
+		padding-top: 20px;
+	}
+} */

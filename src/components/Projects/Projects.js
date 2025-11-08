@@ -1,4 +1,4 @@
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, query, orderBy } from 'firebase/firestore'
 import React, { Component } from 'react'
 
 import { db } from '../util/Firebase';
@@ -22,12 +22,13 @@ class Projects extends Component {
 	}
 
 	async fetchProjects() {
-		await getDocs(collection(db, "projects",))
+		await getDocs(query(collection(db, "projects",), orderBy("display_order", "desc")))
 			.then((querySnapshot) => {
 				const data = querySnapshot.docs
 					.map((doc) => ({ ...doc.data(), id: doc.id }))
 				this.setState({ projects: data })
 			})
+
 	}
 
 	render() {
@@ -42,7 +43,7 @@ class Projects extends Component {
 
 		return (
 			<div className='main'>
-				<div className='research-interests row justify-content-center '>
+				<div className='projects row justify-content-center '>
 					<div className='content d-flex flex-column justify-content-center col-lg-6'>
 						{projectCards}
 					</div>
