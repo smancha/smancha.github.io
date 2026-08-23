@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
-import { doc, getDoc } from "firebase/firestore";
 
-import { db } from '../util/Firebase';
+function parseContacts(text) {
+    const contacts = {}
+    text.split('\n').forEach((line) => {
+        const separatorIndex = line.indexOf(':')
+        if (separatorIndex === -1) return
+        const key = line.slice(0, separatorIndex).trim().toLowerCase()
+        const value = line.slice(separatorIndex + 1).trim()
+        if (key) contacts[key] = value
+    })
+    return contacts
+}
 
 class Contacts extends Component {
 
@@ -23,18 +32,9 @@ class Contacts extends Component {
     }
 
     async fetchData() {
-        await getDoc(doc(db, "personal-information", "smancha"))
-            .then((querySnapshot) => {
-                const data = querySnapshot.data()
-                this.setState(
-                    {
-                        email: data.email,
-                        linkedin: data.linkedin,
-                        bluesky: data.bluesky,
-                        location: data.location.city + ", " + data.location.state
-                    }
-                )
-            })
+        const response = await fetch(`${process.env.PUBLIC_URL}/content/contacts.txt`)
+        const text = await response.text()
+        this.setState(parseContacts(text))
     }
 
     render() {

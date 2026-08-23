@@ -1,31 +1,11 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ref, getDownloadURL } from "firebase/storage";
 
-import { storage } from '../util/Firebase';
 import './Sidebar.css';
 
+const profilePicUrl = `${process.env.PUBLIC_URL}/content/profile.jpg`
+
 class Sidebar extends Component {
-
-	constructor() {
-		super()
-
-		this.state = {}
-
-		this.getProfilePic = this.getProfilePic.bind(this)
-	}
-
-	componentDidMount() {
-		this.getProfilePic()
-	}
-
-	async getProfilePic() {
-		getDownloadURL(ref(storage, 'smancha.jpg'))
-			.then((url) => {
-				const img = document.getElementById('profile-pic');
-				img.setAttribute('src', url);
-			})
-	}
 
 	render() {
 		return (
@@ -60,7 +40,7 @@ class Sidebar extends Component {
 				</div>
 				<div className='sidebar sticky-sidebar'>
 					<div className='sidebar-background text-center light'>
-						<img id='profile-pic' className='rounded-circle profile-photo center' alt='Sebastián Mancha' />
+						<img id='profile-pic' className='rounded-circle profile-photo center' alt='Sebastián Mancha' src={profilePicUrl} />
 						<p className='heading-5 name'> Sebastián Mancha </p>
 						<hr className='divider' />
 						<nav className='sidebar-items'>

@@ -1,8 +1,7 @@
-import { collection, getDocs, query, orderBy } from 'firebase/firestore'
 import React, { Component } from 'react'
 
-import { db } from '../util/Firebase';
 import Card from '../util/Card/Card'
+import { parseMarkdownSections } from '../util/parseMarkdownSections'
 import './Projects.css'
 
 class Projects extends Component {
@@ -22,13 +21,9 @@ class Projects extends Component {
 	}
 
 	async fetchProjects() {
-		await getDocs(query(collection(db, "projects",), orderBy("display_order", "desc")))
-			.then((querySnapshot) => {
-				const data = querySnapshot.docs
-					.map((doc) => ({ ...doc.data(), id: doc.id }))
-				this.setState({ projects: data })
-			})
-
+		const response = await fetch(`${process.env.PUBLIC_URL}/content/projects.md`)
+		const markdown = await response.text()
+		this.setState({ projects: parseMarkdownSections(markdown) })
 	}
 
 	render() {

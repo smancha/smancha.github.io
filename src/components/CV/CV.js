@@ -1,45 +1,18 @@
-import React, { Component } from 'react'
-import { ref, getDownloadURL } from "firebase/storage";
+import React from 'react'
 
-import { storage } from '../util/Firebase';
 import './CV.css'
 
-class CV extends Component {
+const cvUrl = `${process.env.PUBLIC_URL}/content/smancha_cv.pdf`
 
-	constructor() {
-		super()
-
-		this.state = { cvUrl: "" }
-
-		this.getCV = this.getCV.bind(this)
-	}
-
-	componentDidMount() {
-		this.getCV()
-	}
-
-	async getCV() {
-		getDownloadURL(ref(storage, 'smancha_cv.pdf'))
-			.then((url) => {
-				const cv = document.getElementById('cv');
-				cv.setAttribute('src', url);
-
-				this.setState({
-					cvUrl: url
-				})
-			})
-	}
-
-	render() {
-		return (
-			<div className='main'>
-				<div className='mobile-pdf text-center justify-content-center'>
-					<a className='dark text-decoration-none ' href={this.state.cvUrl} download='smancha_CV'> Download my CV Here </a>
-				</div>
-				<iframe id='cv' title='smancha_cv' className='pc-pdf' width="100%" height="800"></iframe>
+function CV() {
+	return (
+		<div className='main'>
+			<div className='mobile-pdf text-center justify-content-center'>
+				<a className='dark text-decoration-none ' href={cvUrl} download='smancha_CV'> Download my CV Here </a>
 			</div>
-		)
-	}
+			<iframe id='cv' title='smancha_cv' className='pc-pdf' width="100%" height="800" src={cvUrl}></iframe>
+		</div>
+	)
 }
 
 export default CV
