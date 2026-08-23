@@ -1,0 +1,4 @@
+email: [mylastname] at umd.edu
+linkedin: www.linkedin.com/in/sebastián-a-mancha-275229212
+bluesky: @smancha.bsky.social
+location: Washington, DC
